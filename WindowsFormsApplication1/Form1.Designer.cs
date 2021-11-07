@@ -32,6 +32,7 @@
             this.nombre = new System.Windows.Forms.TextBox();
             this.button2 = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.caps = new System.Windows.Forms.RadioButton();
             this.palindromo = new System.Windows.Forms.RadioButton();
             this.alturaRbtn = new System.Windows.Forms.RadioButton();
             this.label1 = new System.Windows.Forms.Label();
@@ -40,7 +41,8 @@
             this.Bonito = new System.Windows.Forms.RadioButton();
             this.conectar = new System.Windows.Forms.Button();
             this.desconectar = new System.Windows.Forms.Button();
-            this.caps = new System.Windows.Forms.RadioButton();
+            this.cuantosServiciosBtn = new System.Windows.Forms.Button();
+            this.cuantosServiciosLbl = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -95,6 +97,18 @@
             this.groupBox1.TabIndex = 6;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Peticion";
+            // 
+            // caps
+            // 
+            this.caps.AutoSize = true;
+            this.caps.Location = new System.Drawing.Point(155, 199);
+            this.caps.Margin = new System.Windows.Forms.Padding(4);
+            this.caps.Name = "caps";
+            this.caps.Size = new System.Drawing.Size(162, 21);
+            this.caps.TabIndex = 13;
+            this.caps.TabStop = true;
+            this.caps.Text = "Transforma en CAPS";
+            this.caps.UseVisualStyleBackColor = true;
             // 
             // palindromo
             // 
@@ -183,23 +197,31 @@
             this.desconectar.UseVisualStyleBackColor = true;
             this.desconectar.Click += new System.EventHandler(this.desconectar_Click);
             // 
-            // caps
+            // cuantosServiciosBtn
             // 
-            this.caps.AutoSize = true;
-            this.caps.Location = new System.Drawing.Point(155, 199);
-            this.caps.Margin = new System.Windows.Forms.Padding(4);
-            this.caps.Name = "caps";
-            this.caps.Size = new System.Drawing.Size(162, 21);
-            this.caps.TabIndex = 13;
-            this.caps.TabStop = true;
-            this.caps.Text = "Transforma en CAPS";
-            this.caps.UseVisualStyleBackColor = true;
+            this.cuantosServiciosBtn.Location = new System.Drawing.Point(633, 180);
+            this.cuantosServiciosBtn.Name = "cuantosServiciosBtn";
+            this.cuantosServiciosBtn.Size = new System.Drawing.Size(155, 48);
+            this.cuantosServiciosBtn.TabIndex = 14;
+            this.cuantosServiciosBtn.Text = "¿Cuántos servicios?";
+            this.cuantosServiciosBtn.UseVisualStyleBackColor = true;
+            this.cuantosServiciosBtn.Click += new System.EventHandler(this.cuantosServiciosBtn_Click);
+            // 
+            // cuantosServiciosLbl
+            // 
+            this.cuantosServiciosLbl.AutoSize = true;
+            this.cuantosServiciosLbl.Location = new System.Drawing.Point(630, 243);
+            this.cuantosServiciosLbl.Name = "cuantosServiciosLbl";
+            this.cuantosServiciosLbl.Size = new System.Drawing.Size(0, 17);
+            this.cuantosServiciosLbl.TabIndex = 15;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(988, 692);
+            this.Controls.Add(this.cuantosServiciosLbl);
+            this.Controls.Add(this.cuantosServiciosBtn);
             this.Controls.Add(this.conectar);
             this.Controls.Add(this.desconectar);
             this.Controls.Add(this.groupBox1);
@@ -210,6 +232,7 @@
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -228,6 +251,8 @@
         private System.Windows.Forms.Button desconectar;
         private System.Windows.Forms.RadioButton palindromo;
         private System.Windows.Forms.RadioButton caps;
+        private System.Windows.Forms.Button cuantosServiciosBtn;
+        private System.Windows.Forms.Label cuantosServiciosLbl;
     }
 }
 
